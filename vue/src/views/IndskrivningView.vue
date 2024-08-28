@@ -40,6 +40,7 @@ const config = ref({
         { slug: "logistik", label: "Logistik" },
         { slug: "teknik", label: "Teknisk Tjeneste" },
         { slug: "pr", label: "PR og kommunikation" },
+        { slug: "kok", label: "Køkkenhold" },
         { slug: "andet", label: "Andet" },
     ],
 });
