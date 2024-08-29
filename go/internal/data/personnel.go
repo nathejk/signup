@@ -85,8 +85,8 @@ type Personnel struct {
 func (user *Personnel) Validate(v validator.Validator) {
 	v.Check(user.Name != "", "name", "must be provided")
 	v.Check(len(user.Name) <= 500, "name", "must not be more than 500 bytes long")
-	v.Check(user.Email != "", "email", "must be provided")
-	v.CheckEmail(string(user.Email), "email", "must be a valid email address")
+	//v.Check(user.Email != "", "email", "must be provided")
+	//v.CheckEmail(string(user.Email), "email", "must be a valid email address")
 	/*
 	   	if user.Password.plaintext != nil {
 	   		ValidatePasswordPlaintext(v, *user.Password.plaintext)
