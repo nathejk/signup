@@ -355,7 +355,7 @@ func (app *application) updatePersonHandler(w http.ResponseWriter, r *http.Reque
 	}
 
 	var input struct {
-		Name       *string             `json:"title"`
+		Name       *string             `json:"name"`
 		Email      *types.EmailAddress `json:"email"`
 		Phone      *types.PhoneNumber  `json:"phone"`
 		Korps      *types.CorpsSlug    `json:"corps"`
